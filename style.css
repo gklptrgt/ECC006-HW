@@ -1,0 +1,87 @@
+:root {
+    --font: 'Roboto Mono', monospace;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+    margin: 0;
+
+}
+
+.menu {
+    background-color: black;
+    padding: 20px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    display: inline;
+}
+.menu li a{
+    font-family: var(--font);
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+
+}
+
+.menu li a:hover{
+    text-decoration: underline;
+    color: blueviolet;
+}
+.menu li a:active{
+    text-decoration: underline;
+    color: green;
+}
+.landing {
+    background-color: #03C988;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 330px 0px;
+}
+
+#title {
+    font-family: var(--font);
+    font-size: 70px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+
+    color: black;
+}
+
+#desc {
+    font-family: var(--font);
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    
+    color: black;
+}
+
+
+#hobtitle {
+    font-family: var(--font);
+    font-size: 50px;
+    color: white;
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
