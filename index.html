@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +8,112 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&family=Roboto:wght@100;300;500&display=swap"
+        rel="stylesheet">
     <title>Gökalp Turgut's Homepage</title>
 
 </head>
+
 <body>
     <header></header>
 
     <nav class="menu">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#hob">Hobbies & Interests</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Homeworks</a></li>
-            <li><a href="#">Cats</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#int_hob">Hobbies & Interests</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#hws">Homeworks</a></li>
+            <li><a href="#cats">Cats</a></li>
         </ul>
     </nav>
 
-    <div class="landing">
-        <h1 id="title">Hi, I'm Gökalp.</h1>
-        <h2 id="desc">I'm a software engineer who loves turning caffeine into code and petting my cat for debugging purposes!</h2>
-    </div>
+    <section id="home">
+        <div class="landing">
+            <h1 id="title">Hi, I'm Gökalp.</h1>
+            <h2 id="desc">I'm a software engineer who loves turning caffeine into code and petting my cat for debugging
+                purposes!</h2>
+        </div>
+    </section>
 
-    <div class="hobbies" id="hob">
-        <h1 id="hobtitle">Hobbies & Interests</h1>
+    <section id="about">
+        <div class="container desc">
+            <p class="font white">At 22 years young and studying at Near East University, you can often find me
+                passionately typing away at
+                my computer, fueled by my love for coding and my furry feline companions who always seem to find their
+                way onto my keyboard.</p>
+        </div>
 
-    </div>
+    </section>
+
+
+
+    <section id="int_hob">
+        <div class="left">
+            <h2 class="subtitle">Hobbies</h2>
+            <ul class="points">
+                <li>Coding</li>
+                <li>Designing & Modelling</li>
+                <li>Tennis</li>
+                <li>Fitness</li>
+                <li>Petting Cats</li>
+            </ul>
+        </div>
+        <div class="right">
+            <h2 class="subtitle">Interests</h2>
+            <ul class="points">
+                <li>Software Development</li>
+                <li>Website Development</li>
+                <li>Automation & Scraping</li>
+                <li>Solving Problems</li>
+                <li>Embedded Systems</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="skills">
+        <div class="skill">
+            <h2 class="subtitle">Skills</h2>
+            <ul class="points">
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>C/C++</li>
+                <li>Photoshop</li>
+                <li>Blender</li>
+                <li>Office Tools</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="hws">
+        <div class="homeworks">
+          <h2 class="subtitle2">Homeworks</h2>
+          <div class="listt">
+            <a href="#homework-1" class="button">
+              <h3>Homework 1</h3>
+              <p>You're currently here!</p>
+            </a>
+            <a href="#homework-2" class="button">
+              <h3>Homework 2</h3>
+            </a>
+            <a href="#homework-3" class="button">
+              <h3>Homework 3</h3>
+            </a>
+            <a href="#homework-4" class="button">
+              <h3>Homework 4</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    <section id="cats">
+
+    </section>
 </body>
+
 </html>

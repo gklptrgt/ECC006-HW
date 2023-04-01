@@ -14,6 +14,10 @@ body {
 .menu {
     background-color: black;
     padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
 }
 .menu ul {
     list-style-type: none;
@@ -35,11 +39,12 @@ body {
 
 .menu li a:hover{
     text-decoration: underline;
-    color: blueviolet;
+    color: #03C988;
 }
 .menu li a:active{
     text-decoration: underline;
-    color: green;
+    color: #03C988;
+
 }
 .landing {
     background-color: #03C988;
@@ -71,17 +76,146 @@ body {
 }
 
 
-#hobtitle {
+.subtitle {
     font-family: var(--font);
-    font-size: 50px;
+    font-size: 45px;
     color: white;
+    padding-left: 35px;
 }
 
 .hobbies {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+}
 
+.list {
+    border: 3px solid #03C988;
+    padding: 50px;
+}
+
+.lsTitle {
+    font-family: var(--font);
+    font-size: 40px;
+    color: white;
+}
+
+.points li {
+    font-family: var(--font);
+    font-size: 20px;
+    color: white;
+    margin-left: 50px;
+}
+
+
+#hob {
+    margin: 100px 0;
+}
+
+
+/* NEW LINES */
+.font {
+    font-family: var(--font);
+}
+
+.white {
+    color: white;
+}
+
+.container {
+    margin: 100px;
+}
+.desc {
+    text-align: center;
+
+}
+
+.left {
+    background-color: plum;
+    margin: 100px;
+    padding: 50px
+}
+
+.right {
+    background-color: crimson;
+    margin: 100px;
+    padding: 50px
+}
+#int_hob {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  #int_hob .left, #int_hob .right {
+    flex: 1;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.skill {
+    margin: 50px 400px;
+    border: 2px dashed white;
+}
+
+.black {
+    color: #000000;
+}
+
+
+#hws {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
+}
+
+.listt {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+  }
+  
+  .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 200px;
+    background-color: #f1f1f1;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+    background-color: crimson;
+    color: #fff;
+  }
+
+.button h3 {
+    margin: 0;
+    font-family: var(--font);
+}
+
+
+.button p {
+
+    font-family: var(--font);
+}
+
+.subtitle2 {
+    font-family: var(--font);
+    font-size: 45px;
+    color: black;
 
 }
