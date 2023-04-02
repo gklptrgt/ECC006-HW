@@ -4,8 +4,9 @@
     --white: #F5F5F5;
 }
 
+
 body {
-    background-color: var(--white);
+    background-color: var(--purple);
     color: var(--purple);
     font-family: Verdana, Arial, sans-serif;
 
@@ -19,6 +20,17 @@ header {
     text-align: center;
 }
 
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.container {
+    background-color: var(--white);
+    padding: 15px;
+}
+
 h1 {
     line-height: 200%;
 }
@@ -28,13 +40,13 @@ nav {
     text-align: center;
 }
 
-nav a{
+nav a {
     text-decoration: none;
 }
 
 .studio {
     font-style: italic;
-  }
+}
 
 
 footer {
@@ -42,8 +54,21 @@ footer {
     font-size: 0.60em;
     font-style: italic;
     text-align: center;
+    padding: 10px;
 }
 
 dt {
     font-weight: bold;
+}
+
+
+#floatright {
+    margin: 10px;
+    float: right;
+}
+
+#yogamat {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
 }
