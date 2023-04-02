@@ -1,0 +1,49 @@
+:root {
+    --purple: #3F2860;
+    --blue: #9BC1C2;
+    --white: #F5F5F5;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--purple);
+    font-family: Verdana, Arial, sans-serif;
+
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: var(--blue);
+    text-align: center;
+}
+
+h1 {
+    line-height: 200%;
+}
+
+nav {
+    font-weight: bold;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.studio {
+    font-style: italic;
+  }
+
+
+footer {
+    background-color: var(--blue);
+    font-size: 0.60em;
+    font-style: italic;
+    text-align: center;
+}
+
+dt {
+    font-weight: bold;
+}
