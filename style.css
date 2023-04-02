@@ -164,3 +164,79 @@ nav a:hover {
         margin-bottom: 20px;
     }
 }
+
+
+.inbox {
+    border: 2px solid crimson;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+table,
+td {
+    /* border: 1px solid #333; */
+    padding: 10px;
+}
+
+.button {
+    /* background-color: wheat; */
+    border: 2px solid crimson;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 50px;
+    cursor: pointer;
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.button:hover {
+    background-color: crimson;
+    color: white !important;
+}
+
+.activebutton {
+    background-color: crimson;
+    color: white !important;
+}
+
+a .button {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+a {
+    text-decoration: none;
+}
+
+.article {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 100px;
+    padding-left: 20px;
+}
+
+.articleTitle {
+    font-size: 40px;
+}
+
+.article h3 {
+    padding: 6px 40px;
+}
+
+.article p {
+    padding: 1px 80px;
+}
+
+.article ol {
+    padding: 1px 100px;
+}
+
+hr {
+    margin: 50px 100px;
+}
