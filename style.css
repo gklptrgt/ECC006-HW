@@ -107,7 +107,12 @@ nav a:hover {
         background-position: 0% 82%
     }
 }
-
+#floatright {
+    margin: 10px;
+    float: right;
+    padding-top: 17px;
+    border-radius: 10px;
+}
 .landing h1 {
     font-size: 48px;
     margin-bottom: 20px;
