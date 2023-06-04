@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ECC006-HW/style.css"> <!-- EDIT THIS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&family=Roboto:wght@100;300;500&display=swap"
+        rel="stylesheet">
+    <title>Homework 9</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+        
+        form {
+          width: 400px;
+          margin: 0 auto;
+          margin-top: 100px;
+        }
+        
+        fieldset {
+          margin-bottom: 20px;
+          border: 1px solid #ccc;
+          padding: 10px;
+        }
+        
+        legend {
+          font-weight: bold;
+        }
+        
+        label {
+          display: block;
+          margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+          width: 100%;
+          padding: 5px;
+          margin-bottom: 10px;
+        }
+        
+        select {
+          height: 100px;
+        }
+        
+        input[type="submit"],
+        input[type="reset"] {
+          padding: 10px 20px;
+          background-color: #337ab7;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+        }
+        
+        input[type="reset"] {
+          background-color: #ccc;
+        }
+      </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/ECC006-HW/index.html">Home</a></li>
+                <li><a href="/ECC006-HW/index.html#about">About me</a></li>
+                <li><a href="/ECC006-HW/index.html#hobbies">Hobbies &amp; Interests</a></li>
+                <li><a href="/ECC006-HW/index.html#skills">Skills</a></li>
+                <li><a href="/ECC006-HW/index.html#hws">Homeworks</a></li>
+                <li><a href="/ECC006-HW/index.html#cats">Cats</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <form action="http://www.uyar.com/teaching/ecc006/2017spring/login.php" method="POST">
+          <fieldset>
+            <legend>Music Survey</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+
+            <fieldset>
+              <legend>Favorite Genre:</legend>
+              <label><input type="radio" name="genre" value="rock"> Rock</label>
+              <label><input type="radio" name="genre" value="techno"> Techno</label>
+              <label><input type="radio" name="genre" value="house"> House</label>
+            </fieldset>
+            
+            <fieldset>
+              <legend>Favorite Artists:</legend>
+              <label><input type="checkbox" name="artists" value="rammstein"> Rammstein</label>
+              <label><input type="checkbox" name="artists" value="morten-granau"> Morten Granau</label>
+              <label><input type="checkbox" name="artists" value="empire-of-the-sun"> Empire of the Sun</label>
+            </fieldset>
+            
+            <label for="genre">Favorite Instrument:</label>
+            <select id="instrument" name="instrument" size="3">
+              <option value="guitar">Guitar</option>
+              <option value="piano">Piano</option>
+              <option value="drums">Drums</option>
+              <option value="violin">Violin</option>
+            </select>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="3" cols="60"></textarea>
+            
+            
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+          </fieldset>
+        </form>
+      </body>
+      </html>
