@@ -263,3 +263,16 @@ a {
 hr {
     margin: 50px 100px;
 }
+
+.red-border {
+    background-color: red;
+    color: white;
+}
+.green-border {
+    background-color: green;
+    color: white;
+}
+.orange-border {
+    background-color: rgb(173, 99, 2);
+    color: white;
+}
