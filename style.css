@@ -204,16 +204,18 @@ td {
     /* background-color: wheat; */
     border: 2px solid crimson;
     border-radius: 5px;
-    margin: 10px;
+    margin: 40px;
     padding: 50px;
     cursor: pointer;
+    flex-basis: 20%;
 }
 
 
 .buttons {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    justify-content: space-between;
 }
 
 .button:hover {
