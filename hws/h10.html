@@ -11,7 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&family=Roboto:wght@100;300;500&display=swap"
         rel="stylesheet">
-    <title>Homework 6</title>
+    <title>Homework 10</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
 <body>
@@ -29,7 +30,79 @@
     </header>
     <section id="homework2">
         <div class="aboutme article">
-            <h1 class="articleTitle">Working on the data. Will be uploded on 4 june around midnight. :)</h1>
+            <h1 class="articleTitle">E-Commerce Survey</h1>
+            <p>I acquired survey data by using Google Forms. Here is the <a href="https://forms.gle/BrkBrVaxGrKSN1iB6">link</a>. Currently not many 
+            responded but I will keep updating the data. Also I used plotly.js to plot the results to have a better look on the demographic data.</p>
+
+            <h3>How many have purchased an item online?</h3>
+            <p>7</p>
+
+            <h3>How many have shopped but not purchased online?</h3>
+            <p>1</p>
+
+            <h3>How many purchase online once a year? Once a month? Once a week?</h3>
+            <div id="shopping" style="width:100%;max-width:700px"></div>
+            
+            <h3>What is their age range (18-25, 26-39, 40-50, or over 50)?</h3>
+            <div id="age" style="width:100%;max-width:700px"></div>
+
+            <h3>What is their gender?</h3>
+            <div id="gender" style="width:100%;max-width:700px"></div>
+
+            <h3>What is their level of education (high school, some college, college graduate, or graduate
+                school)?</h3>
+            <div id="school" style="width:100%;max-width:700px"></div>
+
+            <h3>What is their favorite online shopping site?</h3>
+            <p>Note: I asked them to give me at least 3 of their favorite shopping site.</p>
+            <div id="favorite" style="width:100%;max-width:700px"></div>
+
+            <h3>Conclusion</h3>
+            <p> Based on the collected survey data, it is evident that online shopping is highly popular among the surveyed group, especially among young adults. The convenience, extensive product variety, and ease of comparing prices and items make online shopping an appealing choice. The preference for well-known shopping websites indicates a strong inclination towards platforms that offer a wide range of products and deliver positive customer experiences. Additionally, it is worth noting that a significant portion of the surveyed group is located in Europe, as indicated by their favorite shopping websites. This highlights the accessibility and reach of online shopping across different regions.</p>
+            <p>The collected survey data, as well as the <a href="https://www.pewresearch.org/short-reads/2022/11/21/for-shopping-phones-are-common-and-influencers-have-become-a-factor-especially-for-young-adults/">statistics from the online report</a>, strongly support the conclusion that online shopping is widely adopted among the surveyed group, especially among young adults. This aligns perfectly with the survey data, where all respondents confirmed engaging in online shopping and belonging to the age range of 18-25.</p>
+            <p><a href="https://www.pewresearch.org/short-reads/2022/11/21/for-shopping-phones-are-common-and-influencers-have-become-a-factor-especially-for-young-adults/">Reference</a></p>
+
+            <br><br>
+            <p>For further inquiries or questions, feel free to contact me:<br><a href="mailto:gklptrgt@gmail.com">Gökalp Turgut</a></p>
+        
+        </div>
+    </section>
+
+    <script>
+        var interval_arr_x = ["Once a year", "Once a month", "Once a week"];
+        var interval_arr_y = [1, 6, 0];
+        var interval_data = [{labels:interval_arr_x, values:interval_arr_y, type:"pie"}];
+        
+        Plotly.newPlot("shopping", interval_data);
+
+        var age_arr_x = ["18-25", "26-39", "40-50", "Over 50"];
+        var age_arr_y = [7,0,0,0];
+        var age_data = [{labels:age_arr_x, values:age_arr_y, type:"pie"}];
+        
+        Plotly.newPlot("age", age_data);
+
+        var gender_arr_x = ["Female", "Male"];
+        var gender_arr_y = [5 ,2];
+        var gender_data = [{labels:gender_arr_x, values:gender_arr_y, type:"pie"}];
+        
+        Plotly.newPlot("gender", gender_data);
+
+        var school_arr_x = ["High School", "Some College", "College Graduate", "Graduate School"];
+        var school_arr_y = [1 ,1, 3, 2];
+        var school_data = [{labels:school_arr_x, values:school_arr_y, type:"pie"}];
+        
+        Plotly.newPlot("school", school_data);
+
+        
+        var favorite_arr_x = ["Amazon", "Ali Express", "Trendyol", "Joom", "Shein", "Urben Outfitters", "Lookfantastic", "Pretty Little Things",
+    "TESCO", "Etsy", "Zara", "Fartech", "Cult Beauty"];
+        var favorite_arr_y = [5 ,1, 1, 1, 2, 1,1,1,1,1,1,1,1];
+        var favorite_data = [{labels:favorite_arr_x, values:favorite_arr_y, type:"pie"}];
+        
+        Plotly.newPlot("favorite", favorite_data);
+
+
+    </script>
 </body>
 
 </html>
